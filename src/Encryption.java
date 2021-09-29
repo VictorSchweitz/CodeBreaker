@@ -11,14 +11,13 @@ public class Encryption
     public static void main(String[] args)
     {
         // 1
-        /**
-         int character = characterToIndex('t');
-         System.out.println(character);
-        */
+        int character = characterToIndex('t');
+        System.out.println(character);
+        
 
         // 2. Index to character
-        // char index = indexToCharacter(2);
-        // System.out.println(index);
+        char index = indexToCharacter(2);
+        System.out.println(index);
 
         // 3.
         char letterToShiftForward = caesarCharacterEncoded('V');
@@ -64,6 +63,7 @@ public class Encryption
         int returnPosition = alphabet.indexOf(letterToEncode) + 3;
         return alphabet.charAt(returnPosition);
     }
+    
 
     // Here, I make it possible to insert multiple characters
     // Method must return a String and takes a String as parameter
